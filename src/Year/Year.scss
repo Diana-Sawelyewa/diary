@@ -1,0 +1,37 @@
+/* .containerMonth {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-auto-rows: 150px; 
+} */
+
+.calendarYear {
+    display: grid;
+    grid-template-columns: repeat(4, 280px);
+    grid-auto-rows: 230px; 
+
+
+    
+}
+.todayCalendarYear {
+    background-color: rgb(221, 218, 218);
+}
+
+.daysMonthYear {
+    display: grid;
+    grid-template-columns: repeat(7, 30px);
+    grid-auto-rows: 30px; 
+}
+.daysWeekMonthYear {
+    display: grid;
+    grid-template-columns: repeat(7, 30px);
+    grid-auto-rows: 30px; 
+}
+
+.todayDayMonth {
+    color: red;
+}
+
+.todayContainerMonthYear {
+    background-color: rgb(209, 153, 153);
+}
+

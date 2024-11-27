@@ -1,0 +1,42 @@
+.containerMonth {
+    margin: 0 auto;
+    width: 560px;
+    
+}
+
+.calendarMonth {
+    display: grid;
+    grid-template-columns: repeat(7, 80px);
+    grid-auto-rows: 50px; //может быть без ауто, чтобы был скролл
+    //grid-auto-rows: minmax(100px, auto);
+    .dayMonth {
+        background-color: rgba(219, 200, 174, .5);
+        border: 1px solid rgba(0, 31, 167,0);
+        overflow: auto;
+        text-align: center;
+    }
+    .nextMonth, .prevMonth {
+        text-align: center;
+        border: 1px solid rgba(0, 31, 167,0);
+    }
+
+    .nextMonth:focus, .prevMonth:focus, .nextMonth:focus-within, .prevMonth:focus-within {
+        border: 1px solid rgb(0, 31, 167);
+    }
+
+    .dayMonth:focus, .dayMonth:focus-within {
+        border: 1px solid rgb(0, 31, 167);
+    }
+    .todayMonth {
+        border: 1px solid red
+    }
+
+}
+
+.daysWeekMonth {
+    display: grid;
+    grid-template-columns: repeat(7, 80px);
+    grid-auto-rows: 20px;
+    text-align: center;
+
+}
