@@ -44,7 +44,7 @@ function App() {
 
 
   return (
-    <Router>
+    <Router basename="/diary">
 <Routes>
   <Route path='/' element={<Year date={date} setDate={setDate} tasksOfYears={tasksOfYears} setTasksOfYears={setTasksOfYears} tasksOfMonths={tasksOfMonths} setTasksOfMonths={setTasksOfMonths}/>}/>
   <Route path='/month' element={<Month date={date} setDate={setDate} setTasksOfDays={setTasksOfDays} tasksOfDays={tasksOfDays}  tasksOfYears={tasksOfYears} setTasksOfYears={setTasksOfYears} tasksOfMonths={tasksOfMonths} setTasksOfMonths={setTasksOfMonths}/>}/>
